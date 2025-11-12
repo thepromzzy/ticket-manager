@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html { font-family: system-ui, sans-serif; }
+body { min-height: 100vh; background: #f4f6f9; }
+
+.ticket-form .field { margin-bottom: 1rem; }
+
+.ticket-form label { display: block; margin-bottom: .25rem; font-weight: 600; }
+
+.ticket-form input,
+.ticket-form textarea { width: 100%; padding: .5rem; border: 1px solid #ccc; border-radius: 4px; }
+
+.ticket-form button {
+  background: #0066ff; color: #fff; border: none; padding: .75rem 1.25rem;
+  border-radius: 4px; cursor: pointer; font-weight: 600;
+}
+
+.ticket-form button:hover { background: #0052cc; }
+
+.ticket-card { border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem; margin-bottom: 1rem; background: #fafafa; }
+
+.ticket-card header { display: flex; justify-content: space-between; align-items: center; margin-bottom: .5rem; }
+
+.ticket-card h3 { margin: 0; font-size: 1.1rem; }
+.status { font-size: .8rem; text-transform: uppercase; padding: .2rem .5rem; border-radius: 4px; }
+
+.status.open { background: #e3f2fd; color: #1565c0; }
+.status.closed { background: #e8f5e9; color: #2e7d32; }
+
+.ticket-card p { margin: .5rem 0; color: #555; }
+
+.ticket-card footer { display: flex; gap: .5rem; margin-top: .75rem; }
+
+.ticket-card button { font-size: .85rem; padding: .4rem .8rem; border: none; border-radius: 4px; cursor: pointer; }
+
+.ticket-card button:first-of-type { background: #1976d2; color: #fff; }
+
+.ticket-card button.delete { background: #d32f2f; color: #fff; }
+
+.ticket-grid { display: grid; gap: 1rem; }
+
+@media (min-width: 640px) {
+  .ticket-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+}
