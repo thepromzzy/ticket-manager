@@ -1,7 +1,7 @@
 .container { max-width: 960px; margin: 0 auto; padding: 1rem; }
 .header { text-align: center; margin-bottom: 2rem; }
-.main { display: grid; gap: 2rem; }
-.form-section, .list-section { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,.08); }
+.main { display:contents; gap: 2rem; }
+.form-section, .list-section{ background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,.08); }
 @media (min-width: 640px) {
   .main { grid-template-columns: 1fr 2fr; }
 }

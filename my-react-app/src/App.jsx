@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import TicketForm from './TicketForm'
 import TicketList from './TicketList';
+import LandingPage from './LandingPage';
 import './App.css'
+import './LandingPage.css'
 
 function App() {
   const [refresh, setRefresh] = useState(0);
@@ -15,6 +17,10 @@ function App() {
       </header>
 
       <main className="main">
+        <section className="hero-section">
+          <LandingPage onCreated={handleNewTicket} />
+        </section>
+
         <section className="form-section">
           <TicketForm onCreated={handleNewTicket} />
         </section>
