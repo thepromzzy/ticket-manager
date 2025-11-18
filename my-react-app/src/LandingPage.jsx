@@ -1,5 +1,7 @@
 import React from 'react';
 import './LandingPage.css'
+import { Link } from "react-router-dom";
+import App from './App';
 
 const LandingPage = () => {
   return (
@@ -9,7 +11,6 @@ const LandingPage = () => {
         <div className="hero-content">
           <h1>Streamline Your Ticket Management</h1>
           <p>Efficiently handle support tickets, track issues, and improve customer satisfaction with our intuitive web app.</p>
-          <button className="cta-btn">Get Started</button>
         </div>
       </section>
 

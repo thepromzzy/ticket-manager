@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 
 
 let MEMORY_STORE = [
-  { id: 1, title: 'Login bug', description: 'Cannot sign in with Google', status: 'open', createdAt: new Date() },
-  { id: 2, title: 'UI glitch', description: 'Buttons misaligned on mobile', status: 'closed', createdAt: new Date() },
+  //{ id: 1, title: 'Login bug', description: 'Cannot sign in with Google', status: 'open', createdAt: new Date() },
+ // { id: 2, title: 'UI glitch', description: 'Buttons misaligned on mobile', status: 'closed', createdAt: new Date() },
 ];
 
 export function useTickets() {
