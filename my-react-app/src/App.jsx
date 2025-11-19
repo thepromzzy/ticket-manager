@@ -8,7 +8,6 @@ import Login from './Login';
 import { Toaster, toast } from "react-hot-toast";
 import { AuthProvider, useAuth } from './AuthContext';
 import './App.css';
-import './LandingPage.css';
 
 // Protected Route Component
 function ProtectedRoute({ children }) {
