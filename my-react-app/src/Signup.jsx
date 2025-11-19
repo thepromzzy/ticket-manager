@@ -1,4 +1,3 @@
-// src/signup.jsx
 import "./auth.css";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -17,7 +16,7 @@ export default function Signup() {
       return;
     }
 
-    // Basic email validation
+    //email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       toast.error("Please enter a valid email address");
@@ -29,12 +28,11 @@ export default function Signup() {
       return;
     }
 
-    // Save the registered user (this stays forever until manually cleared)
+    // Save the registered user (this stays in localStorage)
     localStorage.setItem("registeredUser", JSON.stringify({ email, password }));
 
     toast.success("Account created successfully!  Now log in.");
 
-    // Redirect to login page after toast
     setTimeout(() => {
       navigate("/login");
     }, 1200);
@@ -44,7 +42,7 @@ export default function Signup() {
     <div className="auth-container">
       <div className="auth-card">
         <div className="auth-hero">
-        <p>Streamline Your Ticket Management</p>
+        <p>Your Ticket Manager</p>
       </div>
         <h2 className="auth-title">Create Account</h2>
 

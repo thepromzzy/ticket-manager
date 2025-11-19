@@ -1,4 +1,3 @@
-// src/Login.jsx
 import "./auth.css";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -15,7 +14,7 @@ export default function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Check if user has ever signed up
+    
     const registeredUser = localStorage.getItem("registeredUser");
 
     if (!registeredUser) {
@@ -31,16 +30,15 @@ export default function Login() {
 
     const userData = JSON.parse(registeredUser);
 
-    // Validate credentials
+    // Validation
     if (email === userData.email && password === userData.password) {
       toast.success("Welcome back! Login successful", {
         duration: 3000,
       });
 
-      // Log the user in (saves session + updates context)
+    
       login({ email: userData.email });
 
-      // Go to dashboard
       navigate("/");
     } else {
       toast.error("Invalid email or password. Please try again. ❌", {
@@ -53,7 +51,7 @@ export default function Login() {
     <div className="auth-container">
       <div className="auth-card">
         <div className="auth-hero">
-        <p>Streamline Your Ticket Management</p>
+        <p>Your Ticket Manager</p>
       </div>
         <h2 className="auth-title">Login</h2>
 
